@@ -1,0 +1,27 @@
+{
+  "name": "umi-router-segmentation",
+  "version": "1.0.0",
+  "description": "umi工程按需打包",
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "protoStart": "cross-env UMI_ENV=proto umi dev",
+    "protoBuild": "cross-env UMI_ENV=proto umi build"
+  },
+  "author": "lixiaoxiao",
+  "dependencies": {
+    "react": "16.4.1",
+    "umi": "2.2.8",
+    "umi-plugin-react": "1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "eslint": "4.17.0",
+    "eslint-config-umi": "0.1.2",
+    "eslint-plugin-flowtype": "2.42.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.6.1",
+    "babel-eslint": "8.2.2"
+  }
+}
