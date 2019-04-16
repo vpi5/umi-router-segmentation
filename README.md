@@ -21,3 +21,16 @@ npm install || cnpm install || yarn install
 
 # 注意事项
 使用这种方式进行打包 会忽略指定的文件 请勿把全局组件放入其中
+
+# umi 配置 has 路由  http://localhost:3000/#/
+.umirc.js中添加 history: 'hash',
+
+# react umi 一键兼容到IE 9 一键兼容到IOS 8
+1、在.umirc.js文件中配置
+2、添加targets: { ie : 9 } //此处是需要兼容 IE 9 的地方
+3、添加
+        targets:{ ios : 8 },
+        autoprefixer : {
+            flexbox : true,
+        }
+//此处是兼容 IOS 8 并且 兼容 flexbox布局  据说需要umi2.4以上版本才会兼容
